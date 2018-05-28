@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B9FC70B620BC0A0300DDD91E /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FC70B420BC0A0300DDD91E /* Logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9FC70BD20BC0A0D00DDD91E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FC70BC20BC0A0D00DDD91E /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9FC70B120BC0A0300DDD91E /* Logger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Logger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FC70B420BC0A0300DDD91E /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		B9FC70B520BC0A0300DDD91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FC70BC20BC0A0D00DDD91E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				B9FC70B420BC0A0300DDD91E /* Logger.h */,
 				B9FC70B520BC0A0300DDD91E /* Info.plist */,
+				B9FC70BC20BC0A0D00DDD91E /* Logger.swift */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					B9FC70B020BC0A0300DDD91E = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FC70BD20BC0A0D00DDD91E /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		B9FC70BA20BC0A0300DDD91E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.apitula.Logger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		B9FC70BB20BC0A0300DDD91E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
